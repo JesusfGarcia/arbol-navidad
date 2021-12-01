@@ -1,0 +1,232 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.pinoContainer {
+  background-color: #242323;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 30px;
+  position: relative;
+}
+
+.pinito {
+  width: 25em;
+  height: 26em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.punta {
+  width: 0;
+  height: 0;
+  border-left: 4em solid transparent;
+  border-right: 4em solid transparent;
+  border-bottom: 4em solid rgb(23, 97, 0);
+}
+
+.semipunta {
+  width: 0;
+  height: 0;
+  border-left: 6em solid transparent;
+  border-right: 6em solid transparent;
+  border-bottom: 6em solid rgb(23, 97, 0);
+  margin-top: -3em;
+}
+
+.cuerpo {
+  width: 0;
+  height: 0;
+  border-left: 8em solid transparent;
+  border-right: 8em solid transparent;
+  border-bottom: 8em solid rgb(23, 97, 0);
+  margin-top: -5em;
+}
+
+.parteAbajo {
+  width: 0;
+  height: 0;
+  border-left: 10em solid transparent;
+  border-right: 10em solid transparent;
+  border-bottom: 10em solid rgb(23, 97, 0);
+  margin-top: -6em;
+}
+
+.base {
+  width: 0;
+  height: 0;
+  border-left: 12em solid transparent;
+  border-right: 12em solid transparent;
+  border-bottom: 12em solid rgb(23, 97, 0);
+  margin-top: -7em;
+}
+
+.tronco {
+  width: 5em;
+  height: 7em;
+  background-color: rgb(109, 53, 36);
+  position: absolute;
+  bottom: 0;
+}
+
+.esfera {
+  width: 0.3em;
+  height: 1em;
+  border-radius: 1em;
+  position: absolute;
+  transition: 1s linear all;
+}
+
+#esf1 {
+  top: 3em;
+  left: 10em;
+}
+
+#esf2 {
+  top: 4em;
+  left: 13em;
+}
+
+#esf3 {
+  top: 10em;
+  left: 8em;
+}
+
+#esf4 {
+  top: 6em;
+  left: 7em;
+}
+
+#esf5 {
+  top: 16em;
+  left: 20em;
+}
+
+#esf6 {
+  top: 15em;
+  left: 10em;
+}
+
+#esf7 {
+  top: 12em;
+  left: 15em;
+}
+
+#esf8 {
+  top: 17em;
+  left: 3em;
+}
+
+#esf9 {
+  top: 7em;
+  left: 14em;
+}
+
+#esf10 {
+  top: 8em;
+  left: 10em;
+}
+
+#esf11 {
+  top: 6em;
+  left: 16em;
+}
+
+#esf12 {
+  top: 17em;
+  left: 13em;
+}
+
+#esf13 {
+  top: 12em;
+  left: 20em;
+}
+
+#esf14 {
+  top: 16em;
+  left: 7em;
+}
+
+#esf15 {
+  top: 12em;
+  left: 10em;
+}
+
+#esf16 {
+  top: 13em;
+  left: 5em;
+}
+
+#esf17 {
+  top: 12em;
+  left: 15em;
+}
+
+#esf18 {
+  top: 3em;
+  left: 15em;
+}
+
+#esf19 {
+  top: 1em;
+  left: 12em;
+}
+
+#esf20 {
+  top: 15em;
+  left: 16em;
+}
+
+.estrella {
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  width: 3em;
+  height: 3em;
+  background-color: yellow;
+  top: -1.4em;
+  position: absolute;
+}
+
+.alfombra {
+  width: 13em;
+  height: 5em;
+  background-color: rgb(221, 44, 44);
+  border-radius: 4em;
+  position: absolute;
+  bottom: -2em;
+}
+
+.piso {
+  width: 100vw;
+  height: 13em;
+  background-color: #c08c40;
+  position: absolute;
+  bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .pinoContainer {
+    font-size: 13px;
+  }
+
+  .piso {
+    height: 50vh;
+  }
+}
